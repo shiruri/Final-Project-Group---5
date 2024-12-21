@@ -1,0 +1,297 @@
+* {
+  /*Bruhhhh why am all doing this alone  Update using this old code for template for project*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  margin-bottom: 0; /*WHY IS THERE STILL SPACEE UNDERNEATH WHAT  */
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(153, 14, 14, 0.2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(207, 23, 23, 0.5);
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(196, 169, 169, 0.8);
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(56, 59, 63, 0.5) rgba(255, 255, 255, 0.2); /* Scrollbar design hmm will update soon to match the vibe */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  background-color: #0e0b0b;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ccc;
+}
+
+.pic-ctn {
+  position: relative;
+  width: 100vw; 
+  height: 100vh; 
+  overflow: hidden; 
+}
+
+.pic-ctn img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  opacity: 0;
+  animation: display 10s infinite;
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.pic-ctn img:nth-child(2) {
+  animation-delay: 2s;
+}
+.pic-ctn img:nth-child(3) {
+  animation-delay: 4s;
+}
+.pic-ctn img:nth-child(4) {
+  animation-delay: 6s;
+}
+.pic-ctn img:nth-child(5) {
+  animation-delay: 8s;
+}
+
+  .header {
+    background-size: cover;
+    background-position: center;
+    background-color: #272323;
+    margin-bottom: 50px;
+    height: 400px;
+    object-fit: contain;
+    background-image: url("images/logo.png");
+  }
+  
+.container-part {
+    display: flex;
+    padding-bottom: 100px;
+    background-color: black;
+    height: 100px;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
+
+}
+
+.Btn-1, .Btn-2 {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    background-color: #0071e3; 
+    color: white;
+    border-radius: 20px; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+
+    
+}
+.space {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+.Btn-1:hover, .Btn-2:hover {
+    background-color: #0051cc; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-2px); 
+}
+
+.Btn-1:active, .Btn-2:active {
+    background-color: #003f8a;
+    transform: translateY(1px); 
+    box-shadow: none; 
+
+}
+.desc {
+    color: rgb(255, 251, 251);
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    align-items: center;
+    font-family: Arial;
+        
+}
+.desc-container {
+    padding-top: 50px;
+   background-color: black;
+   font-style: italic;
+
+}
+.wrapper-ayeaye {
+    background-color: #000000;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+
+  }
+ 
+  .card-container {
+    display: flex;
+    gap: 40px; 
+    flex-wrap: wrap; 
+    justify-content: center;
+  }
+  
+  .card {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    transition: opacity 0.5s ease;
+    
+  }
+  
+  .card__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .card:hover .card__content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .card__title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card__description {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  .text-space {
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    color: #110808;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .description {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    color: #0a0808; 
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 10px;
+    padding: 0 15px;
+  }
+  
+  .description {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Finder Tool</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #0e0b0b;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 12px;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ccc;
+        }
+
+        .desc-container {
+            padding: 50px 20px;
+            background-color: rgb(37, 34, 34);
+            color: rgb(206, 206, 206);
+            text-align: center;
+        }
+
+        .desc-container h1 {
+            font-size: 36px;
+            color: #fff;
+        }
+
+        .bike-finder-container {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .bike-finder-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        .bike-finder-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .bike-finder-form select,
+        .bike-finder-form input[type="text"],
+        .bike-finder-form button {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            outline: none;
+            transition: box-shadow 0.3s ease, border-color 0.3s ease;
+            width: 100%;
+        }
+
+        .bike-finder-form select:hover,
+        .bike-finder-form input[type="text"]:hover,
+        .bike-finder-form button:hover {
+            border-color: #333836;
+            box-shadow: 0 0 8px rgba(34, 36, 35, 0.5);
+        }
+
+        .bike-finder-form button {
+            background-color: #0e0b0b;
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .bike-finder-form button:hover {
+            background-color: #333;
+        }
+
+        footer {
+            background-color: #323532;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+    <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="bike-finder.html">Bike Finder Tool</a>
+        <a href="offers.html">Service Booking</a>
+        <a href="customer.html">Customer Reviews</a>
+        <a href="promotional.html">Promotional Offers</a>
+        <a href="about_us.html">About Us</a>
+    </div>
+</div>
+    <div class="desc-container">
+        <h1>Bike Finder Tool</h1>
+        <p>Find the perfect bike tailored to your needs. Select your preferences below!</p>
+    </div>
+
+    <div class="bike-finder-container">
+        <h2 class="bike-finder-title">Choose Your Preferences</h2>
+        <form class="bike-finder-form">
+            <select name="bike-type" id="bike-type">
+                <option value="">Select Bike Type</option>
+                <option value="mountain">Mountain Bike</option>
+                <option value="road">Road Bike</option>
+                <option value="electric">Electric Bike</option>
+                <option value="hybrid">Hybrid Bike</option>
+            </select>
+
+            <select name="rider-height" id="rider-height">
+                <option value="">Select Rider Height</option>
+                <option value="short">Below 5'5"</option>
+                <option value="medium">5'5" to 5'11"</option>
+                <option value="tall">Above 5'11"</option>
+            </select>
+
+            <select name="budget" id="budget">
+                <option value="">Select Your Budget</option>
+                <option value="low">Below 15,000 PHP</option>
+                <option value="medium">15,000 - 50,000 PHP</option>
+                <option value="high">Above 50,000 PHP</option>
+            </select>
+
+            <input type="text" name="location" placeholder="Enter Your Location (City, State)" />
+
+            <button type="button">Find My Bike</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Cycle Haven</p>
+    </footer>
+</body>
+</html>

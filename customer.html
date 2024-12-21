@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #0e0b0b;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 12px;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ccc;
+        }
+
+        .reviews-container {
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .reviews-container h1 {
+            font-size: 36px;
+            color: #0e0b0b;
+            margin-bottom: 20px;
+        }
+
+        .review-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin: 15px auto;
+            padding: 20px;
+            max-width: 800px;
+            text-align: left;
+        }
+
+        .review-card h3 {
+            font-size: 20px;
+            color: #0e0b0b;
+        }
+
+        .review-card p {
+            font-size: 16px;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .review-card span {
+            font-size: 14px;
+            color: #888;
+        }
+
+        footer {
+            background-color: #323532;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+    <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="bike-finder.html">Bike Finder Tool</a>
+        <a href="offers.html">Service Booking</a>
+        <a href="customer.html">Customer Reviews</a>
+        <a href="promotional.html">Promotional Offers</a>
+        <a href="about_us.html">About Us</a>
+    </div>
+</div>
+    <div class="reviews-container">
+        <h1>Customer Reviews</h1>
+
+        <div class="review-card">
+            <h3>Jane Doe</h3>
+            <p>"Cycle Haven is amazing! The staff was incredibly helpful, and my bike runs like new again. Highly recommend their service!"</p>
+            <span>⭐⭐⭐⭐⭐</span>
+        </div>
+
+        <div class="review-card">
+            <h3>John Smith</h3>
+            <p>"The booking process was so simple, and the technicians are very skilled. My go-to place for bike maintenance."</p>
+            <span>⭐⭐⭐⭐⭐</span>
+        </div>
+
+        <div class="review-card">
+            <h3>Emily Taylor</h3>
+            <p>"Great experience! The team was professional and completed the repair on time. I appreciate their attention to detail."</p>
+            <span>⭐⭐⭐⭐⭐</span>
+        </div>
+
+        <div class="review-card">
+            <h3>Michael Brown</h3>
+            <p>"The promotional offers are such a great deal. I was able to get a full check-up for my bike at an affordable price."</p>
+            <span>⭐⭐⭐⭐</span>
+        </div>
+
+        <div class="review-card">
+            <h3>Sophia Wilson</h3>
+            <p>"Excellent customer service! They patiently answered all my questions and provided top-notch service. Thank you!"</p>
+            <span>⭐⭐⭐⭐⭐</span>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Cycle Haven</p>
+    </footer>
+</body>
+</html>

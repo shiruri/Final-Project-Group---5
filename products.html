@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #0e0b0b;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar-links {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 12px;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #ccc;
+        }
+        .desc-container {
+            padding: 50px 20px;
+            background-color: rgb(37, 34, 34);
+            color: rgb(206, 206, 206);
+            text-align: center;
+        }
+        .desc-container h1 {
+            font-size: 36px;
+            color: #fff;
+        }
+        .desc-container p {
+            font-size: 18px;
+            color: #e0e0e0;
+        }
+        .search-bar {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px 15px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            outline: none;
+            transition: box-shadow 0.3s ease, border-color 0.3s ease;
+            margin: 10px auto;
+        }
+        .search-bar:focus {
+            border-color: #222423;
+            box-shadow: 0 0 8px rgba(34, 36, 35, 0.5);
+        }
+        .navbar-filter {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        .filter-dropdown {
+            padding: 10px 15px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            background-color: #fff;
+            color: #333;
+            cursor: pointer;
+            outline: none;
+            width: 200px;
+        }
+        .marketplace-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            padding: 20px;
+            margin: 20px;
+            gap: 20px;
+        }
+        .marketplace-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            width: 300px;
+        }
+        .marketplace-card:hover {
+            transform: scale(1.05);
+        }
+        .marketplace-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .marketplace-card .info {
+            padding: 15px;
+        }
+        .marketplace-card .info h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .marketplace-card .info p {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .marketplace-card .info .price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #323632;
+        }
+        footer {
+            background-color: #323532;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="bike-finder.html">Bike Finder Tool</a>
+            <a href="offers.html">Service Booking</a>
+            <a href="customer.html">Customer Reviews</a>
+            <a href="promotional.html">Promotional Offers</a>
+            <a href="about_us.html">About Us</a>
+        </div>
+    </div>
+
+    <div class="desc-container">
+        <h1>Cycle Haven Products</h1>
+        <input type="text" placeholder="Search Here" class="search-bar">
+        <div class="navbar-filter">
+            <select class="filter-dropdown">
+                <option value="all">All Categories</option>
+                <option value="mountain">Mountain Bikes</option>
+                <option value="road">Road Bikes</option>
+                <option value="electric">Electric Bikes</option>
+                <option value="accessories">Accessories</option>
+                <option value="parts">Parts</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="marketplace-grid">
+      <div class="marketplace-card">
+          <img src="images/bike.jpg" alt="Product Image Placeholder">
+          <div class="info">
+              <h2>Speedster 3000</h2>
+              <p>Experience unmatched speed and agility with this cutting-edge bike, built for adventure.</p>
+              <p class="price">12,000 PHP</p>
+          </div>
+      </div>
+      <div class="marketplace-card">
+          <img src="images/accessories.jpg" alt="Product Image Placeholder">
+          <div class="info">
+              <h2>Cargo Rack Bicycle Accessories</h2>
+              <p>Enhance your cycling journey with a sturdy and versatile cargo rack.</p>
+              <p class="price">250 PHP</p>
+          </div>
+      </div>
+      <div class="marketplace-card">
+          <img src="images/bike-2.jpg" alt="Product Image Placeholder">
+          <div class="info">
+              <h2>Compact Travel Bike</h2>
+              <p>Foldable and perfect for city commutes.</p>
+              <p class="price">4,500 PHP</p>
+          </div>
+      </div>
+      <div class="marketplace-card">
+          <img src="images/parts.jpg" alt="Product Image Placeholder">
+          <div class="info">
+              <h2>Durable Bike Pedals</h2>
+              <p>High-quality pedals for rough terrains.</p>
+              <p class="price">450 PHP</p>
+          </div>
+      </div>
+  </div>
+  
+
+    <footer>
+        <p>© 2024 Cycle Haven. All rights reserved.</p>
+    </footer>
+</body>
+</html>

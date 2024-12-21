@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cycle Haven - Promotional Offers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #0e0b0b;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 12px;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ccc;
+        }
+
+        .promo-container {
+            padding: 50px 20px;
+            background-color: #fff;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .promo-container h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .promo-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .promo-card {
+            background-color: #0e0b0b;
+            color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .promo-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+        }
+
+        .promo-card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .promo-card p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .promo-card button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .promo-card button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #323532;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="bike-finder.html">Bike Finder Tool</a>
+            <a href="offers.html">Service Booking</a>
+            <a href="customer.html">Customer Reviews</a>
+            <a href="promotional.html">Promotional Offers</a>
+            <a href="about_us.html">About Us</a>
+        </div>
+    </div>
+    <div class="promo-container">
+        <h1>Exclusive Promotional Offers</h1>
+        <div class="promo-grid">
+            <div class="promo-card">
+                <h3>Summer Tune-Up Special</h3>
+                <p>Get a full bike check-up and tune-up for only ₱2,800. Ensure your ride is in top shape for summer adventures!</p>
+                <button>Claim Offer</button>
+            </div>
+            <div class="promo-card">
+                <h3>Buy One, Get One Free</h3>
+                <p>Purchase any cycling accessory and get a second one of equal or lesser value for free. Stock up on your essentials today!</p>
+                <button>Shop Now</button>
+            </div>
+            <div class="promo-card">
+                <h3>Membership Discount</h3>
+                <p>Become a Cycle Haven member and enjoy 20% off all services and products year-round. Memberships start at just ₱1,700.</p>
+                <button>Join Now</button>
+            </div>
+            <div class="promo-card">
+                <h3>Referral Program</h3>
+                <p>Refer a friend and both receive a ₱560 gift card for your next visit. Share the love for cycling!</p>
+                <button>Refer a Friend</button>
+            </div>
+           
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Cycle Haven | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Booking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #0e0b0b;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 12px;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ccc;
+        }
+
+        .desc-container {
+            padding: 50px 20px;
+            background-color: rgb(37, 34, 34);
+            color: rgb(206, 206, 206);
+            text-align: center;
+        }
+
+        .desc-container h1 {
+            font-size: 36px;
+            color: #fff;
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px auto;
+            max-width: 1000px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 8px 24px rgba(0, 0, 0, 0.15); /* Custom box shadow */
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25), 0 12px 36px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+        }
+        
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit:fill;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin: 15px 0;
+            color: #333;
+        }
+
+        footer {
+            background-color: #323532;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+    <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="bike-finder.html">Bike Finder Tool</a>
+        <a href="offers.html">Service Booking</a>
+        <a href="customer.html">Customer Reviews</a>
+        <a href="promotional.html">Promotional Offers</a>
+        <a href="about_us.html">About Us</a>
+    </div>
+</div>
+
+    <div class="desc-container">
+        <h1>Service Booking</h1>
+        <p>Choose your branch and reserve a service at your convenience!</p>
+    </div>
+
+    <div class="cards-container">
+        <a href="branch1.html" class="card">
+            <img src="images/manila.png" alt="Branch 1">
+        </a>
+        <a href="branch2.html" class="card">
+            <img src="images/pasay.png" alt="Branch 2">
+        </a>
+        <a href="branch3.html" class="card">
+            <img src="images/qc.png" alt="Branch 3">
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Cycle Haven</p>
+    </footer>
+</body>
+</html>
